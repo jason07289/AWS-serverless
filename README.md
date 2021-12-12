@@ -1,4 +1,6 @@
-# API 요구기능
+# AWS-serverless
+
+## API 요구기능
 - CRUD(Create Read Update Delete)
     - 카드 조회
         - 입력: x
@@ -16,7 +18,7 @@
         - 입력: id
         - 반환: X
 
-# 카드 클래스 정의
+## 카드 클래스 정의
 - id
     - 카드 id
 - category
@@ -26,6 +28,15 @@
 - cardElement
     - HTML/DOM
 
-# 이벤트 동작과정
+## 이벤트 동작과정
 ![image](https://user-images.githubusercontent.com/38865267/145708246-04cc2ead-2d89-44ce-85be-a8596ebe470d.png)
 
+## DB
+- DynamoDB
+
+- Table: Cards
+
+- Attributes:
+    - id: S -> PK
+    - category: S
+    - title: S
