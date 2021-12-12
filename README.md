@@ -40,3 +40,11 @@
     - id: S -> PK
     - category: S
     - title: S
+
+## API GATE WAY
+- API GATE WAY
+    - HOST: https://l684dtya03.execute-api.ap-northeast-2.amazonaws.com/prod
+        PATH, METHOD, BODY, HEADER
+    - URI 명세
+        GET: HOST/kanban/cards
+        Body: {}
