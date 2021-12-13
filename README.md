@@ -57,3 +57,5 @@
 
         DELETE: HOST/kanban/cards/{id}
         Body: {}}
+## S3 Bucket static web hosting 
+- HOST: http://devjaehyuk0728.s3-website.ap-northeast-2.amazonaws.com/
