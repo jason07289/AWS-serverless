@@ -7,18 +7,21 @@ exports.handler = async (event) => {
     console.log("Received: " + JSON.stringify(event, null, 2));
     let response = "";
     try {
+        const id = event.pathParameters.id;//테스트시 전달 필수 값
         var params = {
             TableName: tableName,
+            Key: {
+                id: id
+            }
         };
 
-        const cards = await documentClient.scan(params).promise();
+        await documentClient.delete(params).promise();
 
         response = {
-            statusCode: 200,
+            statusCode: 204,
             headers: {
                 "Access-Control-Allow-Origin": "*"
-            },
-            body: JSON.stringify(cards)
+            }
         };
     } catch (exception) {
         console.error(exception);

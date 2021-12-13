@@ -48,3 +48,12 @@
     - URI 명세
         GET: HOST/kanban/cards
         Body: {}
+
+        POST: HOST/kanban/cards
+        Body: Card Object
+
+        PUT: HOST/kanban/cards/{id}
+        Body: Card Object
+
+        DELETE: HOST/kanban/cards/{id}
+        Body: {}}
